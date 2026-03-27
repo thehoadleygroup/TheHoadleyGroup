@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+::selection { background: rgba(201,169,110,0.25); color: #f0e6d0; }
+
+:focus-visible {
+  outline: 2px solid #c9a96e;
+  outline-offset: 3px;
+}
