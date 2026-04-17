@@ -14,7 +14,7 @@ const BRANDS = [
   },
   {
     name: "SaltwaterEstates",
-    url: "https://findyourdock.com/search",
+    url: "https://saltwaterestates.com",
     tagline: "South Florida waterfront property search.",
     description:
       "IDX-powered waterfront property search for Palm Beach County and beyond. Nautical chart overlay, vessel-matched filters, and every active listing updated in real time.",
@@ -24,7 +24,7 @@ const BRANDS = [
   },
   {
     name: "Family Advisory",
-    url: "https://findyourdock.com/family-advisory",
+    url: "https://saltwaterestates.com/onboarding/buyer",
     tagline: "One relationship. Every property decision.",
     description:
       "We serve a select number of South Florida families across the full spectrum of their real estate life — waterfront acquisition, investment strategy, Florida domicile planning, construction, and legacy coordination.",
@@ -50,6 +50,26 @@ const BRANDS = [
       "Residential and commercial construction, renovation, and repositioning across Palm Beach County. We manage the build from permit acquisition to final walk-through — coordinated with every real estate decision.",
     cta: "Start a Project →",
     label: "Construction & Renovation",
+    external: true,
+  },
+  {
+    name: "Sterling Route",
+    url: "https://sterlingroute.com",
+    tagline: "Luxury Sprinter van service. Your crew, your route.",
+    description:
+      "A custom Mercedes-Benz Sprinter Daycruiser for property tours, client entertainment, golf weekends, and family travel. 10 seats, private suite, white-glove pickup from West Palm Beach. Circle members receive preferred rates.",
+    cta: "Book a Van →",
+    label: "Luxury Transportation",
+    external: true,
+  },
+  {
+    name: "Hoadley Stays",
+    url: "https://lakesidelandingflx.com",
+    tagline: "Short-term rental properties. Boutique hospitality.",
+    description:
+      "Our own portfolio of vacation properties — Lakeside Landing and Smooth Sailing on Seneca Lake, Finger Lakes NY. Direct booking, concierge-level guest experience, and case studies for our STR advisory practice.",
+    cta: "View Properties →",
+    label: "Hospitality Portfolio",
     external: true,
   },
 ];
@@ -159,7 +179,7 @@ export default function HoadleyGroupHome() {
           </p>
           <h2 className="font-serif mb-14"
             style={{ fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 300, color: "#f0e6d0" }}>
-            Five ways we serve South Florida.
+            Seven platforms. One advisor.
           </h2>
 
           <div className="flex flex-col gap-px"
@@ -280,7 +300,7 @@ export default function HoadleyGroupHome() {
             </a>
             <span className="hidden sm:inline" style={{ color: "rgba(240,230,208,0.12)" }}>·</span>
             <a
-              href="https://findyourdock.com/family-advisory"
+              href="https://saltwaterestates.com/onboarding/buyer"
               target="_blank"
               rel="noopener noreferrer"
               className="font-mono text-xs tracking-widest uppercase px-5 py-3 transition-all hover:opacity-80"
@@ -321,6 +341,41 @@ export default function HoadleyGroupHome() {
               </span>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* ── THE CIRCLE ─��──────────────────────────────────────────────── */}
+      <section
+        className="px-6 sm:px-12 py-20 sm:py-28"
+        style={{ borderTop: "1px solid rgba(201,169,110,0.15)", background: "rgba(201,169,110,0.04)" }}
+      >
+        <div className="max-w-3xl mx-auto text-center">
+          <div className="mb-6">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+              <circle cx="20" cy="20" r="18" stroke="#c9a96e" strokeWidth="1" fill="none" opacity="0.4"/>
+              <circle cx="20" cy="20" r="12" stroke="#c9a96e" strokeWidth="0.5" fill="none" opacity="0.2"/>
+              <circle cx="20" cy="20" r="3" fill="#c9a96e" opacity="0.6"/>
+            </svg>
+          </div>
+          <p className="font-mono text-xs tracking-[0.35em] uppercase mb-4"
+            style={{ color: "rgba(201,169,110,0.55)" }}>
+            Client Program
+          </p>
+          <h2 className="font-serif mb-6"
+            style={{ fontSize: "clamp(28px, 4vw, 40px)", fontWeight: 300, color: "#f0e6d0" }}>
+            The Circle
+          </h2>
+          <p className="font-serif leading-relaxed mb-8"
+            style={{ fontSize: "clamp(15px, 2vw, 18px)", fontWeight: 300, color: "rgba(240,230,208,0.5)", maxWidth: "520px", margin: "0 auto" }}>
+            Signed Barefoot Realty clients unlock preferred rates and priority access
+            across every Hoadley Group entity — Sterling Route transportation,
+            Hoadley Construction projects, Hoadley Stays properties, and off-market
+            acquisition opportunities.
+          </p>
+          <p className="font-mono text-xs tracking-[0.2em] uppercase"
+            style={{ color: "rgba(201,169,110,0.35)" }}>
+            One relationship. Every advantage.
+          </p>
         </div>
       </section>
 
